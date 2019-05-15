@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  percentage_of_administration: 1
+  percentage_of_franchisee: 1
+  percentage_of_property: 1
+  days_for_reserve_cancellation: 1
+  days_for_reserve_refund: 1
+  days_of_ticket_validity: 1
+
+two:
+  percentage_of_administration: 1
+  percentage_of_franchisee: 1
+  percentage_of_property: 1
+  days_for_reserve_cancellation: 1
+  days_for_reserve_refund: 1
+  days_of_ticket_validity: 1

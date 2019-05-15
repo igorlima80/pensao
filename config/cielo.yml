@@ -1,0 +1,7 @@
+development:
+  merchant_id: 62bf708f-477c-4deb-b1e9-ae0c09e892a6
+  merchant_key: JVEFFAQJZKUNSJSNFWGXRWPQWKBPVYQNUXWBVABU
+
+production:
+  merchant_id: 62bf708f-477c-4deb-b1e9-ae0c09e892a6
+  merchant_key: JVEFFAQJZKUNSJSNFWGXRWPQWKBPVYQNUXWBVABU

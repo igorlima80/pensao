@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: postgres
+  password: root
+
+development:
+  <<: *default
+  database: hotel_development
+
+test:
+  <<: *default
+  database: hotel_test
+
+production:
+  <<: *default
+  database: hotel_production
+  username: hotel
+  password: <%= ENV['HOTEL_DATABASE_PASSWORD'] %>

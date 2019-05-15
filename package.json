@@ -1,0 +1,15 @@
+{
+  "name": "racing",
+  "private": true,
+  "dependencies": {
+    "activestorage": "^5.2.3",
+    "admin-lte": "^2.4.10",
+    "bootstrap-fileinput": "^5.0.2",
+    "bootstrap3": "^3.3.5",
+    "datatables.net-responsive-bs": "^2.2.3",
+    "jquery": "^3.4.0",
+    "rails-ujs": "^5.2.3",
+    "select2": "^4.0.7-rc.0",
+    "select2-bootstrap-theme": "^0.1.0-beta.10"
+  }
+}

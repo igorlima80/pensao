@@ -1,0 +1,211 @@
+<%= content_for :title_page do %>
+  <h1>
+    <i class="fa fa-fw fa-television"></i>
+    Dashboard <%= @user_kind %>
+    <small><%= @app_name %></small>
+  </h1>
+<% end %>
+
+<div class="nav-without-background">
+  <div class="nav-tabs-custom">
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a href="#tab_1" data-toggle="tab">
+          <i class="fa fa-hashtag fa-2x" data-toggle='tooltip' title='Principal'></i>
+        </a>
+      </li>
+      <li>
+        <a href="#tab_2" data-toggle="tab">
+          <i class="fa fa-braille fa-2x" data-toggle='tooltip' title='DashBoard Principal'></i>
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab_1">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-aqua"><i class="fa fa-hotel"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Box 1</span>
+                <span class="info-box-number">10</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-red"><i class="fa fa-calendar"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Box 2</span>
+                <span class="info-box-number">10</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix visible-sm-block"></div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-green"><i class="fa fa-calendar-check-o"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">box3</span>
+                <span class="info-box-number">10</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-yellow"><i class="fa fa-money"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Box4</span>
+                <span class="info-box-number"><%= number_to_currency 0 %></span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box box-solid">
+              <div class="box-header with-border">
+                <h3 class="box-title">
+                  Listagem1
+                </h3>
+              </div>
+              <div class="box-body no-padding">
+                <table class="table table-stripped datatables_paginate_and_search">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Nome</th>
+                      <th class='text-right'>Campo1</th>
+                      <th class='text-center'>Campo2</th>
+                      <th class='text-center'>Campo3</th>
+                      <th class='text-center'>Campo4</th>
+                      <th class='text-center'>Campo5</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   
+                      <tr>
+                        <td>1</td>
+                        <td>nome</td>
+                        <td class='text-right'>tttt</td>
+                        <td class='text-center'>ttttt</td>
+                        <td class='text-center'>tttt</td>
+                        <td class='text-center'>tttttt</td>
+                        <td class='text-center'>tttttttt</td>
+                      </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+           listagem
+          </div>
+        </div>
+      </div>
+      <!-- /.tab-pane -->
+      <div class="tab-pane" id="tab_2">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <div class="box box-solid">
+              <div class="box-header with-border  text-center">
+                <h3 class="box-title">
+                  <i class="fa fa-calendar"></i> <%=l Time.zone.today %>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <span class="label bg-gray">Campo1</span>
+            <span class="label bg-green">Campo2</span>
+            <span class="label bg-orange">Campo3</span>
+            <span class="label bg-purple">Campo4</span>
+            <span class="label bg-info text-black">Campo5</span>
+            <span class="label bg-navy">Campo6</span>
+            <span class="label bg-red">Campo7</div>
+          </div>
+        </div>
+        <br>
+        <div class="row row-flex">
+         
+            <div class="col-sm-2 col-md-3">
+              <div class="box box-flex box-solid">
+                <div class="box-header with-border ">
+                  <h3 class="box-title ">
+                    <i class="fa fa-home"></i> 
+                  </h3>
+                </div>
+                <div class="box-footer no-padding">
+                  <ul class="nav nav-stacked">
+                    
+                      <li>
+                        <a href="#">
+                          <span class="badge">
+                            <i class="fa fa-briefcase" data-toggle="tooltip" title="Titulo"></i>
+                          </span>
+                          
+                          <span class="pull-right">
+                            <span class="badge">
+                              <i class="fa fa-home" data-toggle="tooltip" title="Texto"></i>
+                            </span>
+                            <span class="badge">
+                              <i class="fa fa-user" data-toggle="tooltip" title="Texto"></i>
+                            </span>
+                            <span class="badge bg-green">
+                              <i class="fa fa-money" data-toggle="tooltip" title="Valor "></i>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge">
+                            <i class="fa fa-arrow-left" data-toggle="tooltip" title="Inicio"></i>
+                          </span>
+                          
+                          <span class="pull-right">
+                          
+                            <span class="badge">
+                              <i class="fa fa-arrow-right" data-toggle="tooltip" title="Fim"></i>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </div>
+ 
+        </div>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+    <!-- /.tab-content -->
+  </div>
+</div>
+
+

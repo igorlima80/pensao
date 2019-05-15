@@ -1,0 +1,8 @@
+<%= render 'shared/index', list: @guests,
+  sort_all: true,
+  additional_columns: ['user_name'],
+  excluded_columns: ['user_id'],
+  search_fields: [
+    { field: 'user_name_cont', label: 'Pesquisar' }
+  ]
+%>
