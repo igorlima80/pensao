@@ -1,5 +1,5 @@
 MenuItem.delete_all
-
+MenuItem.create name: 'Visitantes', icon: 'briefcase', link: 'guests_path', position: 3, target: '_self', permission: 'manage', permission_check: 'Guest', menu_item_id: nil, published: true, active_test: "controller_name == 'guests'"
 admin = MenuItem.create name: 'Admin', icon: 'bars', link: '#', position: 99, target: '_self', permission: 'manage', permission_check: 'all', published: true, active_test: "controller_name == 'all'"
 MenuItem.create name: 'Usuários', icon: 'users', link: 'users_path', position: 4, target: '_self', permission: 'manage', permission_check: 'User', menu_item: admin, published: true, active_test: "controller_name == 'users'"
 MenuItem.create name: 'Estados', icon: 'map', link: 'states_path', position: 12, target: '_self', permission: 'manage', permission_check: 'State', menu_item: admin, published: true, active_test: "controller_name == 'states'"

@@ -89,33 +89,7 @@ class Api::GuestsController < Api::ApplicationController
     end
   end
   
-  def reserves
-    @guest = Guest.find_by(id: params[:id])
-    if @guest
-      render json: @guest.reserves.order(created_at: :desc).as_json(
-        methods: [:translate_status],
-        except: [:total_value_currency, :created_at, :updated_at],
-        include: [
-                    accommodation: {
-                      methods: [:common_images_urls, :fachada_images_urls, :plans],
-                      except: [:id, :value_per_night, :maximum_adult, :maximum_child, :available, :value_per_night_cents,
-                            :value_per_night_currency, :rating_score, :property_id, :type_trip_id, :type_accommodation_id, 
-                            :created_at, :updated_at, :fake_latitude, :fake_longitude],
-                      include: [
-                        address: {
-                          except: [:id, :city_id, :addressable_type, :addressable_id, :created_at, :updated_at]
-                        } 
-                      ]  
-                    },
-                    rating:{
-                      except: [:id]
-                    }
-                  ]
-      )
-    else
-      render json: nil, status: :unprocessable_entity
-    end
-  end
+ 
 
   private
     def guest_params
