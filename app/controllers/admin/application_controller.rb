@@ -16,7 +16,7 @@ module Admin
 
     private
     def set_configurations
-      @app_name = "RedeBH"
+      @app_name = "Saude Descontos"
       @sidebar_menus = MenuItem.sidebar.root
     end
   end

@@ -2,30 +2,12 @@
 pt-BR:
   activerecord:
     models: &MODELS
-      accommodation: Acomodação
-      accreditation_status: Status do Credenciamento
-      address: Endereço
-      cancellation: Cancelamento
-      city: Cidade
-      convenience: Comodidade
-      fee: Taxa
-      franchisee: Representante
-      guest: Hóspede
-      menu_item: Item de Menu
-      payment_status: Status do Pagamento
-      payment_type: Tipo de Pagamento
-      property: Proprietário
-      rating: Avaliação
-      reserve: Reserva
-      reserve_status: Status da Reserva
-      role: Permissão
-      service: Serviço
-      special_period: Período Especial
-      state: Estado
-      type_accommodation: Tipo de Acomodação
-      type_fee: Tipo de Taxa
-      type_trip: Tipo de Viagem
-      unavailability: Indisponibilidade
+      address: Endereço      
+      city: Cidade      
+      guest: Visitante
+      menu_item: Item de Menu      
+      role: Permissão      
+      state: Estado      
       user: Usuário
       setting: Configurações
     attributes:
@@ -34,19 +16,6 @@ pt-BR:
         description: Descrição
         created_at: Criação
         updated_at: Atualização
-      accommodation:
-        <<: *BASIC
-        <<: *MODELS
-        value_per_night: Valor da Diária
-        maximum_adult: Máximo de Adultos
-        maximum_child: Máximo de Crianças
-        available: Disponível
-        rating_score: Nota de Avaliação
-        images: Imagens
-        convenience: Comodidade
-      accreditation_status:
-        <<: *BASIC
-        <<: *MODELS
       address:
         <<: *BASIC
         <<: *MODELS
@@ -55,27 +24,10 @@ pt-BR:
         complement: Complemento
         district: Bairro
         zipcode: CEP
-      cancellation:
-        <<: *BASIC
-        <<: *MODELS
       city:
         <<: *BASIC
         <<: *MODELS
-        ibge: IBGE
-      convenience:
-        <<: *BASIC
-        <<: *MODELS
-      fee:
-        <<: *BASIC
-        <<: *MODELS
-        value: Valor
-      franchisee:
-        <<: *BASIC
-        <<: *MODELS
-        address: Endereço
-        address_number: Número
-        cep: CEP
-        email: E-mail
+        ibge: IBGE      
       guest:
         <<: *BASIC
         <<: *MODELS
@@ -91,85 +43,14 @@ pt-BR:
         permission_check: Checagem de Permissão
         position: Posição
         published: Publicado
-      payment_status:
-        <<: *BASIC
-        <<: *MODELS
-      payment_type:
-        <<: *BASIC
-        <<: *MODELS
-      property:
-        <<: *BASIC
-        <<: *MODELS
-        address: Endereço
-        address_number: Número
-        accreditation_date: Data do Credenciamento
-        deaccreditation_date: Data do Descredenciamento
-        geolocation: Geolocalização
-        pets_accepted: Aceita Animais de Estimação
-        cancellation_period: Periodo de Cancelamento
-        breakfest: Café da Manhã
-        accreditation_statuses: Status do Credenciamento
-        type_accomodations: Tipos de Acomodação
-        cities: Cidade
-        franchisees: Representante
-      rating:
-        <<: *BASIC
-        <<: *MODELS
-      reserve:
-        <<: *BASIC
-        <<: *MODELS
-        checkin_date: Entrada
-        checkout_date: Saída
-        number_adult: Nº de adultos
-        number_child: Nº de crianças
-        number_pets: Nº de animais
-        reserve_statuses: 
-          fresh: "Nova"
-          paid: "Paga"
-          payment_not_authorized: "Pagamento Não Autorizado"
-          paid_capture_pending: "Pagamento Pendente de Captura"
-          canceled_with_refund: "Cancelada com Reembolso"
-          canceled_without_refund: "Cancelada sem Reembolso" 
-          checked_in: "Check-in Iniciado"
-          checked_out: "Check-out Finalizado"
-          evaluated: "Avaliada"    
       role: 
         <<: *BASIC
-        <<: *MODELS
-      service:
-        <<: *BASIC
-        <<: *MODELS
-        value: Valor
-        include_in_daily: Incluir na diária
-      setup:
-        <<: *BASIC
-        <<: *MODELS
-      special_period:
-        <<: *BASIC
-        <<: *MODELS
-        start_date: Início
-        final_date: Fim
-        value: Valor
-        promotional: Promocional
+        <<: *MODELS      
       state:
         <<: *BASIC
         <<: *MODELS
         acronym: Sigla
-        ibge: IBGE
-      type_accommodation:
-        <<: *BASIC
-        <<: *MODELS
-      type_fee:
-        <<: *BASIC
-        <<: *MODELS
-      type_trip:
-        <<: *BASIC
-        <<: *MODELS
-      unavailability:
-        <<: *BASIC
-        <<: *MODELS
-        start_date: Início
-        final_date: Fim
+        ibge: IBGE      
       user:
         <<: *BASIC
         <<: *MODELS
